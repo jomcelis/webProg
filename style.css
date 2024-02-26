@@ -1,0 +1,348 @@
+@font-face{
+    font-family:"Cooper Black";
+    src: url(fonts\COOPBL.TTF);
+}
+
+@import '.utilities/bootstrap-api-utilities';
+
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.cdnfonts.com/css/cooper-black');
+
+#hero,h3,#hero1{
+    font-family: 'Cooper Black', sans-serif;
+    font-size: 6rem;
+    color: #FFFCF8;
+}
+
+.masthead{
+    background-size: cover;
+    min-height: 200vh;
+    position: relative;
+}
+
+#heroImg{
+    max-width: 90vh;
+    float:inline-end;
+    margin-top: -10%;
+}
+
+@media (max-width:992px) {
+    #hero1{
+        font-size: 25pt;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    
+}
+
+
+@media (max-width: 992px) {
+    #heroImg {
+        max-width: 50vh;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 575px) {
+    #hero {
+        text-align: left;
+        font-size: 2.75rem;
+    }
+
+    #heroImg {
+        display: block;
+        margin-top: -5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%; /* Adjust this value based on your design */
+        max-width: 300px; /* Adjust this value based on your design */
+    }
+}
+
+@media (max-width: 376px) {
+    .masthead {
+        min-height: 145vh;
+
+        justify-content: center;
+    }
+
+    #hero {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-top: 10%; /* Adjust this value based on your design */
+    }
+
+    #heroImg {
+        display: block;
+        margin-top: -5%; /* Adjust this value based on your design */
+        width: 50%; /* Adjust this value based on your design */
+        max-width: 300px; /* Adjust this value based on your design */
+    }
+
+    #ViewProd{
+
+        width: 2rem; 
+    }
+}
+
+#BuyNow{
+    --bs-btn-padding-y: .2rem; 
+                --bs-btn-padding-x: .5rem; 
+                --bs-btn-font-size: 16pt; 
+                width: 8rem; 
+                background-color:#FAA226; 
+                border-color: #FAA226;
+                border-radius: 50px;
+                border-width: 2px;
+
+}
+
+#BuyNow:hover{
+    background-color:#FFFCF8; 
+    border-color: #FAA226;
+    color: #FAA226;
+    border-color: #FAA226;
+    border-width: 2px;
+
+}
+
+#ViewProd{
+--bs-btn-padding-y: 1rem; 
+--bs-btn-padding-x: 1rem; 
+--bs-btn-font-size: 14pt; 
+    width: 200px; 
+    height: 70px;
+    background-color:#BA2025; 
+    border-radius: 50px;
+    transition: 0.5s;
+    border-color: #BA2025;
+    border-width: 2px;
+    justify-content: center;
+    font-weight: 500;
+
+}
+
+#ViewProd:hover{
+    background-color: #FFFCF8;
+    border-color: #FFFCF8;
+    color: #BA2025;
+    border-color: #BA2025;
+    border-width: 2px;
+
+}
+
+#cart:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: 0.5s;
+
+
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  p{
+    text-align: left;
+  }
+
+  #section2Div{
+    width: 50%;
+    margin-top: 30;
+  }
+
+
+  .linebreak{
+    width: 53px;
+    height: 4px;
+    background-color: #BA2025;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #sec2Img{
+    max-width: 25%; 
+    margin-right: 0%;
+    margin-left: auto;
+
+  }
+
+body{
+    background-color: #FFFCF8;
+}
+
+.masthead2{
+    position:relative;
+    background-repeat: no-repeat;
+    background-size: 102% ;
+}
+.container2{
+display: flex;
+justify-content: space-evenly;
+gap:0;
+flex-wrap: wrap;
+}
+
+.testimony{
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAA226;
+}
+
+.card{
+    width: 250px;
+    background-color: #FFFCF8;
+    border-radius: 25px;
+
+}
+.slide-content{
+    padding: 45px 20px;
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card-image{
+    position:relative;
+    height:75px;
+    width:75px;
+    border-radius:50%;
+    background:#BA2025;
+    padding:3px;
+}
+
+.image-content,
+.card-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 24px;
+    margin: 10px;
+
+}
+
+.slide-container{
+    max-width:1120px;
+    width:100%;
+    border-radius: 45px;
+}
+.swiper-NavBtn{
+    color:#FFFCF8;
+}
+
+
+#submit{
+    background-color: #BA2025;
+    border: 0;
+    width: 100px;
+    height: 7vh;
+    border-radius: 50px;
+}
+
+.navbar{
+    background-color: #FFFCF8;
+}
+
+#prod:hover{
+    margin-top: -10%;
+    filter: drop-shadow(10px 10px 7px #26262654);
+    cursor: pointer;
+}
+
+#prod{
+    transition: 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+}
+
+#item{
+    border-color: #FAA226;
+    border-width: 100%;
+    background-color: #FAA226;
+}
+
+#price-count{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FAA226;
+    color: white;
+    transform: translateX(-50%);
+    left: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    filter: drop-shadow(0px -2px 10px #26262654);
+}
+
+.custom-num{
+    color: #FAA226;
+    display: flex;
+    width: 3em;
+    height: 1em;
+    /* border:1px #FAA226 solid; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.quantity-input{
+    font-size:em;
+    text-align: center;
+    background: none;
+    border:none;
+    color:black;
+    font-weight: bold;
+    width:100%;
+    
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin:0;
+}
+
+.price{
+    font-weight: bold;
+}
+.highlight{
+    background-color: #BA2025;
+    padding: 5px;
+    border-radius: 25px;
+    color:#FFFCF8;
+    font-weight: 600;
+    font-size: 10px;
+}
+.cart{
+    position: fixed;
+    top:0;
+    right:-100%;
+    width:360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #FFFCF8;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    overflow-y: auto;
+    height: 500px;
+}
+.cart.active{
+    right:0;
+}

@@ -1,0 +1,375 @@
+<html lang = "en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            JOM'S CGS
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+                
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="js/swiper-bundle.min.css">
+    </head>
+<!-- Nav Bar -->
+    <header >
+            <nav class="navbar fixed-top navbar-expand-sm 
+            " id="header" style = "transition: 0.3s ease;">
+            <div class="container">
+                <a 
+                href="#"
+                class="navbar-brand mb-0 h1">
+                <img 
+                class="d-inline-block align-top"
+                src = "images/CGS LOGO COLOR.png" width="80px" alt="JOM'S CGS LOGO">
+                </a>
+    
+                <button
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    class="navbar-toggler"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+    <div style="margin-left: auto; margin-right: 15%;">
+        <div class ="collapse navbar-collapse"
+        id="navbarNav">
+        <ul class ="navbar-nav" >
+            <li class ="nav-item active" style="margin: 5%;">
+                <a href = "http://127.0.0.1:3000/Homepage.html" class="nav-link" >
+                    <h5 class="text-sm-center color: #918D8D ">Home</h5>
+                </a>
+            </li>
+            <li class ="nav-item active" style="margin: 5%;">
+                <a href = "http://127.0.0.1:3000/Contact.html" class="nav-link" >
+                    <h5 class="text-sm-center color: #918D8D ">Contact</h5>
+                </a>
+            </li>
+            <li class ="nav-item active" style="margin: 5%;">
+                <a href = "http://127.0.0.1:3000/About.html" class="nav-link" >
+                    <h5 class="text-sm-center color: #918D8D ">About</h5>
+                </a>
+            </li>
+            <li class ="nav-item active" style="margin-top: 5%; 
+                margin-bottom: 5%;
+                margin-right: 5%;
+                margin-left: 5%;
+                ">
+                <button id ="BuyNow" type="button" class="btn btn-primary"
+                onclick="location.href='http://127.0.0.1:3000/Products.html'"
+                >
+
+                <a href="http://127.0.0.1:3000/Products.html"></a>
+                <h5 style="margin-top: 5%;">Buy Now</h5>
+                </button>
+            </li>
+
+            <li class ="nav-item active" style="margin-top: 6.5%; margin-left: 6%;">
+                <a href = "http://127.0.0.1:3000/Cart.html">
+
+                <img id="cart"
+                src = "images\Shopping Cart.png" width="30px" height="30px">
+                </a>
+
+            </li>
+        </ul>
+        </div>
+    </div>
+
+                </div>
+                
+                <span class ="navbar-brand mb-0 h1"></span>
+            </nav>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+        var header = document.getElementById('header'); 
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                header.style.top = "-120px";
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+    </header>
+<!-- Body -->
+    <body style="height: 6599; width: auto; background-color: #FFFCF8;">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        
+        <!-- Hero -->
+        <section>
+        <div style="height: 15vh;"></div>
+            <div class ="masthead" style="background-image: url('./images/Section\ 1.svg');">
+                
+                <div class ="color-overlay d-flex justify-content-center align-items-center">
+                    <div style="height: 50%; width: auto;"></div>
+
+            <div class="container" id ="heroContainer">
+                <div class ="text-box">
+                    <img id = "heroImg" src="images/Hero.png">
+                    <h1 id="hero" style="text-shadow: 5px 6px 5.4px rgba(0,0,0,0.3); color: white; margin-top: 10%;">HOT TO <br> THE BUTT!</h1>
+                    <a href="http://127.0.0.1:3000/Products.html">
+                    <button id ="ViewProd" type="button" class="btn btn-primary"
+                    onclick="location.href='http://127.0.0.1:3000/Products.html'">
+                    <h5 style="font-weight: bold;">View Our Products</h5>
+                    </button>
+                    </a>
+                </div>
+            
+                
+            </div>
+        </section>
+        
+        <!-- 2nd Section -->
+    <section>
+
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center; margin-top: 10%;">
+                <div id="section2Div">
+                    <h1 id="hero" style="font-size: 3rem; color: #BA2025; margin-top: 20% auto; margin-bottom: 5% auto;">Homemade Fresh</h1>
+                    <div class="linebreak"></div>
+                    <p style="margin-top: 5%; margin-bottom: 5%; font-size: large; font-weight: 500; color: #BA2025;">
+                        At Rib Rack, we believe that grilling with family and <br> friends is one of life's simple pleasures and that the products we use to grill should be simple too.
+                        <br>
+                        <br>
+                        That's why we created the country's best tasting line of BBQ products using real, simple ingredients with names you can pronounce.
+                    </p>
+                    <div>
+                        <button id="ViewProd" class="btn-primary" style="height: 3rem; text-align: center; line-height: 1em; display: block;">
+                            <h5 style="font-weight: bold; color: #F8F9FA;">About Jom's CGS</h5>
+                        </button>
+                    </div>
+                </div>
+                <img id="sec2Img" src="images/2nSectionPhoto.png">
+            </div>
+
+    <!-- Features -->
+    </section>
+    <section style="background-color: #FAA226; display: flex; flex-direction: column;" >
+        <div class= "masthead2">
+            <img src="images\Bgs\WhiteFire2.svg" alt="" style="width: 100%; height: auto;">
+        </div>
+        <div style="color: #fff;">
+            <h1 id="hero" style="font-size: 3rem; text-align: center; margin-bottom: 3%;">SIMPLY THE BEST.</h1>
+            <div class="container2"> 
+                <div style="display: flex; flex-direction: column;">
+                    <img src="images/Mask group.png" style="margin: 10px; height: 50vh;" alt="">
+                    <h3 style="text-align: center;"> HIGHLY SOCIAL </h3>
+                    <p style="text-align: center;">Like drinking a beer or a glass of wine.
+                        <br>
+                        Microdosed for the perfect effect</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <img src="images/Mask group-1.png" style="margin: 10px;height: 50vh;" alt="">
+                    <h3 style="text-align: center;"> HANGOVER FREE </h3>
+                    <p style="text-align: center;">Like drinking a beer or a glass of wine.
+                        <br>
+                        Microdosed for the perfect effect</p>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <img src="images/Mask group-2.png" style="margin: 10px; height: 50vh;" alt="">
+                    <h3 style="text-align: center;"> AWARD WINNER </h3>
+                    <p style="text-align: center;">Like drinking a beer or a glass of wine.
+                        <br>
+                        Microdosed for the perfect effect</p>
+                </div>
+            </div>
+
+            <div style="margin: 10%;"></div>
+        </div>
+    </section>
+
+    <!-- Slider -->
+
+    <section style="background-color: #FFFCF8;">
+        <div>
+            <h1 style="text-align: center;">GALLERY SECTION</h1>
+
+            <img src="images/ORANGE FIRE.svg" style="width: 100%;">
+        </div>
+
+
+    </section>
+
+    <!-- Testimonials -->
+
+    <section style="background-color: #FAA226; display: flex; flex-direction: column;" class="testimony" >
+        <h3 style="text-align: center; color: #FFFCF8; font-size: 3rem; "> REAL WORDS FROM 
+            REAL <br> CUSOTMERS!
+        </h3>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <div class="card swiper-slide" style="border-radius: 50px; border-color: transparent;"> 
+                        <div class ="image-content">
+                            <span class ="overlay"></span>
+                            <div class ="card-image">
+                                <img src="images/scott.jpg" class="card-image">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #FAA226; font-weight: 600; text-align: center;">
+                                "Great flavors and simple ingredients-
+                                <br>
+                                like homemade, only easier."
+                            </p>
+                            <p style="font-size: 1rem; font-weight: 400;"> -Patrick H.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide" style="border-radius: 50px; border-color: transparent;">
+                        <div class ="image-content">
+                            <span class ="overlay"></span>
+                            <div class ="card-image">
+                                <img src="images/scott.jpg" class="card-image">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #FAA226; font-weight: 600; text-align: center;">
+                                "Great flavors and simple ingredients-
+                                <br>
+                                like homemade, only easier."
+                            </p>
+                            <p style="font-size: 1rem; font-weight: 400;"> -Patrick H.</p>
+                        </div>
+                    </div><div class="card swiper-slide" style="border-radius: 50px; border-color: transparent;">
+                        <div class ="image-content">
+                            <span class ="overlay"></span>
+                            <div class ="card-image">
+                                <img src="images/scott.jpg" class="card-image">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #FAA226; font-weight: 600; text-align: center;">
+                                "Great flavors and simple ingredients-
+                                <br>
+                                like homemade, only easier."
+                            </p>
+                            <p style="font-size: 1rem; font-weight: 400;"> -Patrick H.</p>
+                        </div>
+                    </div><div class="card swiper-slide" style="border-radius: 50px; border-color: transparent;">
+                        <div class ="image-content">
+                            <span class ="overlay"></span>
+                            <div class ="card-image">
+                                <img src="images/scott.jpg" class="card-image">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #FAA226; font-weight: 600; text-align: center;">
+                                "Great flavors and simple ingredients-
+                                <br>
+                                like homemade, only easier."
+                            </p>
+                            <p style="font-size: 1rem; font-weight: 400;"> -Patrick H.</p>
+                        </div>
+                    </div><div class="card swiper-slide" style="border-radius: 50px; border-color: transparent;">
+                        <div class ="image-content">
+                            <span class ="overlay"></span>
+                            <div class ="card-image">
+                                <img src="images/scott.jpg" class="card-image">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #FAA226; font-weight: 600; text-align: center; ">
+                                "Great flavors and simple ingredients-
+                                <br>
+                                like homemade, only easier."
+                            </p>
+                            <p style="font-size: 1rem; font-weight: 400;"> -Patrick H.</p>
+                        </div>
+                    </div><div class="card swiper-slide" style="border-radius: 50px; border-color: transparent;">
+                        <div class ="image-content">
+                            <span class ="overlay"></span>
+                            <div class ="card-image">
+                                <img src="images/scott.jpg" class="card-image">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p style="color: #FAA226; font-weight: 600; text-align: center; border-color: transparent;">
+                                "Great flavors and simple ingredients-
+                                <br>
+                                like homemade, only easier."
+                            </p>
+                            <p style="font-size: 1rem; font-weight: 400;"> -Patrick H.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-NavBtn"></div>
+            <div class="swiper-button-prev swiper-NavBtn"></div>
+            <div class="swiper-pagination swiperNavBtn"></div>
+        </div>
+        
+
+    </section>
+
+    <footer style="background-color: black; margin-top: 10px;">
+
+        <div class="container" style="display: flex; flex-direction: row;">
+        <!-- Container -->
+        <div style="display: flex; flex-direction:column; margin-top: 10%; margin-bottom: 10%; padding-top: 10px;" >
+            
+            <p style="color: #FFFCF8; color: #FFFCF8; font-size: x-large;"> 
+                Fresh Updates
+                <br>
+                Direct to your inbox
+            </p>
+            <div style="display: flex; flex-direction: row;">
+                <input style="margin-right: 10px; width: 75%;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Recieve News!">
+                <button class="btn btn-primary" style=" border:0; background-color:#BA2025;" type="submit">Submit</button>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent;" style="background-color: transparent;">
+                <div class="container-fluid" style="margin-left: 0;">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" style="margin-left: -17px;">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a style="color: #FFFCF8;" class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="color: #FFFCF8;" class="nav-link" href="#">Terms and Conditions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a style="color: #FFFCF8;" class="nav-link" href="#">Privacy Policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+        </div>
+
+        <div style="display: flex; flex-direction:column; margin-left: 20%; margin-top: 10%; margin-bottom: 10%; padding-top: 10px;" >
+            <p style="color: #FFFCF8; font-size: x-large;">Follow Us!</p>  
+
+            <div style="display: flex; flex-direction: row;">
+            <a href="https://www.instagram.com/jomscgs/">
+            <img src="images/Instagram Circle.png" width="50px" height="50px" alt="Instagram Link">
+            </a>
+
+            <a href="https://web.facebook.com/JomsCGS">
+            <img src="images/Facebook.png" width="50px" height="50px" alt="Facebook Link">
+            </a>
+            </div>
+            <p style="font-size: small; font-weight:bold; color:#bdbab6; margin-top: 20px; text-align: right;"> ©2024 Jom's Chili Garlic Sauce. All Rights Reserved. </p>
+
+        </div>
+    </footer>
+    </body>
+    <script src ="js/swiper-bundle.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+</html>
